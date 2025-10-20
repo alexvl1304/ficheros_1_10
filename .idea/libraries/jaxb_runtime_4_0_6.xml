@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jaxb-runtime-4.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/jaxb-runtime-4.0.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jakarta.xml.bind-api-4.0.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jaxb-api-2.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
