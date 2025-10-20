@@ -4,9 +4,13 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 
+
+
 void main() {
 
+    Individuals list = Unmarshalling("person.xml");
 
+    System.out.println(list.getList().get(0).getName());
 }
 
 public boolean Marshalling(Individuals list) {
