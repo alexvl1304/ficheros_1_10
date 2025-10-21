@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/Downloads/jaxb-runtime-4.0.6.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jakarta.xml.bind-api-4.0.4.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/jaxb-api-2.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jaxb-core-4.0.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/istack-commons-runtime-4.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/jakarta.activation-api-2.1.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

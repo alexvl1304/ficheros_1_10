@@ -1,10 +1,14 @@
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
-@XmlRootElement
+@XmlRootElement(name = "individuals")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Individuals {
 
+    @XmlElement(name = "individual")
     private ArrayList<Individual> list;
 
     public Individuals() {
@@ -12,14 +16,12 @@ public class Individuals {
         list = new ArrayList<>();
     }
 
-    @XmlElement
-    public ArrayList<Individual> getList() {
-
-        return list;
-    }
-
     public void addIndividual(Individual i) {
 
         list.add(i);
+    }
+
+    public ArrayList<Individual> getList() {
+        return list;
     }
 }

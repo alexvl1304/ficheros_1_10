@@ -1,23 +1,36 @@
-import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Individual {
 
-    private final String name;
+    private String name;
 
-    private final Address address;
+    private Address address;
+
+    public Individual() {
+        this.name = null;
+        this.address = null;
+    }
 
     public Individual(String name, Address address) {
         this.name = name;
         this.address = address;
     }
 
-    @XmlElement
+    public String getName() {
+        return name;
+    }
+
     public Address getAddress() {
         return address;
     }
 
-    @XmlElement
-    public String getName() {
-        return name;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

@@ -1,29 +1,48 @@
-import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Address {
 
-    @XmlElement
-    public String getZip() {
-        return zip;
-    }
+    private String zip;
 
-    @XmlElement
-    public String getCity() {
-        return city;
-    }
+    private String city;
 
-    @XmlElement
-    public String getStreet() {
-        return street;
-    }
+    private String street;
 
-    private final String zip;
-    private final String city;
-    private final String street;
+    public Address() {
+        this.zip = null;
+        this.city = null;
+        this.street = null;
+    }
 
     public Address(String zip, String city, String street) {
         this.zip = zip;
         this.city = city;
+        this.street = street;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setStreet(String street) {
         this.street = street;
     }
 }
